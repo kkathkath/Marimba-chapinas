@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Marimba Chapina</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff6600, #ffcc00);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px #000;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .galeria img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .links {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #004d00;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #00b300;
+        }
+
+        .video {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        iframe {
+            width: 80%;
+            height: 400px;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        .formulario {
+            background-color: #ffffff;
+            margin: 50px auto;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .formulario h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6600;
+        }
+
+        .formulario label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .formulario input, .formulario textarea, .formulario select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .formulario button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .formulario button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        🎶 Marimba Chapina 🎶
+    </header>
+
+    <div class="galeria">
+        <img src="https://images.squarespace-cdn.com/content/v1/5c464d62da02bcc680937c18/1614630197368-KOT8M8EV5KK33Q8GPFP5/pasted+image+0.png" alt="Marimba 1">
+        <img src="https://www.guatemala.com/fotos/201602/marima-885x500.jpg" alt="Marimba 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPs0m0oRGegxWahusceFqsZT4bspXlhyy76A&s" alt="Marimba 3">
+        <img src="https://i0.wp.com/antiguadailyphoto.com/wp-content/uploads/2007/08/1142852092_b561d6575b.jpg?fit=375%2C500&ssl=1" alt="Marimba 4">
+    </div>
+
+    <div class="links">
+        <a href="https://aprende.guatemala.com/cultura-guatemalteca/civismo/la-marimba-simbolo-patrio-de-guatemala/" target="_blank">📚 Historia de la Marimba</a>
+        <a href="https://dca.gob.gt/noticias-guatemala-diario-centro-america/las-notas-de-marimba-que-enamoran-a-los-guatemaltecos/" target="_blank">🎵 Notas que Enamoran</a>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/IYe8E1lzcXk" title="Video sobre marimbas guatemaltecas" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="formulario">
+        <h2>¿Te gusta la marimba? ¡Cuéntanos de ti!</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" placeholder="¿De dónde eres?">
+
+            <label for="pasatiempos">Pasatiempos:</label>
+            <textarea id="pasatiempos" name="pasatiempos" rows="3" placeholder="¿Qué te gusta hacer en tu tiempo libre?"></textarea>
+
+            <label for="gusta">¿Te gusta la marimba?</label>
+            <select id="gusta" name="gusta">
+                <option value="si">¡Claro que sí!</option>
+                <option value="masomenos">Más o menos</option>
+                <option value="no">No mucho</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
